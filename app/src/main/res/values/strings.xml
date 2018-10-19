@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">拍照识别</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<string name="url">http://27.223.99.146:8003/recognition/reg</string>
+	<!--这里是中文界显示的食物名称-->
+	<string-array name="fruitname">
+		<item>0留空</item>
+		<item>1酸奶</item>
+		<item>2苹果</item>
+		<item>3柑橘</item>
+		<item>4香蕉</item>
+		<item>5葡萄</item>
+		<item>6火腿</item>
+		<item>7鸡蛋</item>
+		<item>9西兰花</item>
+		<item>10油菜</item>
+		<item>11西红柿</item>
+		<item>12黄瓜</item>
+		<item>13胡萝卜</item>
+		<item>14茄子</item>
+		<item>15饮料</item>
+		<item>16面包</item>
+		<item>17桃子</item>
+		<item>18猕猴桃</item>
+		<item>21哈蜜瓜</item>
+		<item>22草莓</item>
+		<item>23梨</item>
+		<item>24芒果</item>
+		<item>25西瓜</item>
+		<item>26樱桃</item>
+		<item>27火龙果</item>
+		<item>28青椒</item>
+		<item>29土豆</item>
+		<item>30紫甘蓝</item>
+		<item>31花菜</item>
+		<item>32莲藕</item>
+		<item>33南瓜</item>
+		<item>34大白菜</item>
+		<item>35竹笋</item>
+		<item>36豆芽</item>
+		<item>37菠菜</item>
+		<item>38豆腐</item>
+		<item>39金针菇</item>
+		<item>40包菜</item>
+		<item>41西葫芦</item>
+		<item>42苦瓜</item>
+		<item>43玉米</item>
+		<item>51榴莲</item>
+		<item>52桑葚</item>
+		<item>53荔枝</item>
+		<item>54木瓜</item>
+		<item>55蓝莓</item>
+		<item>56番石榴</item>
+		<item>57牛油果</item>
+		<item>58杨桃</item>
+		<item>59柚子</item>
+		<item>60菠萝蜜</item>
+		<item>61西梅</item>
+		<item>62山竹</item>
+		<item>63红毛丹</item>
+		<item>64韭菜</item>
+		<item>65茭白</item>
+		<item>66冬瓜</item>
+		<item>67空心菜</item>
+		<item>84豆泡</item>
+		<item>85冰宝贴</item>
+		<item>73芹菜</item>
+		<item>79圣女果</item>
+		<item>72茼蒿</item>
+		<item>75香菜</item>
+		<item>86豆干</item>
+		<item>74蒜苗</item>
+		<item>82蜂蜜</item>
+		<item>76芸豆</item>
+		<item>69生菜</item>
+		<item>89桂圆</item>
+		<item>87香菇</item>
+		<item>88老干妈</item>
+		<item>77蘑菇</item>
+		<item>90塑料袋食品</item>
+		<item>80猪肉</item>
+		<item>70油麦菜</item>
+		<item>71大葱</item>
+		<item>83蒜苔</item>
+		<item>81豆腐皮</item>
+		<item>68丝瓜</item>
+		<item>78白萝卜</item>
+	</string-array>
+	<!--这里是英文界面显示的食物名称，改成英文即可,规则:编号+名字-->
+	<string-array name="fruitname_en">
+		<item>0yogurt</item>
+		<item>1yogurt</item>
+		<item>2apple</item>
+		<item>3tangerine</item>
+		<item>4banana</item>
+		<item>5grape</item>
+		<item>6ham</item>
+		<item>7egg</item>
+		<item>9broccoli</item>
+		<item>10pakchoi</item>
+		<item>11tomato</item>
+		<item>12cucumber</item>
+		<item>13carrot</item>
+		<item>14eggplant</item>
+		<item>15sprite</item>
+		<item>16bread</item>
+		<item>17peach</item>
+		<item>18kiwifruit</item>
+		<item>21cantaloupe</item>
+		<item>22strawberry</item>
+		<item>23pear</item>
+		<item>24mango</item>
+		<item>25watermelon</item>
+		<item>26cherry</item>
+		<item>27pitaya</item>
+		<item>28green  pepper</item>
+		<item>29potato</item>
+		<item>30purple cabbage</item>
+		<item>31cauliflower</item>
+		<item>32lotus root</item>
+		<item>33pumpkin</item>
+		<item>34chinese cabbage</item>
+		<item>35bamboo shoot</item>
+		<item>36beansprout</item>
+		<item>37spinach</item>
+		<item>38tofu</item>
+		<item>39needle mushroom</item>
+		<item>40cabbage</item>
+		<item>41squash</item>
+		<item>42balsam pear</item>
+		<item>43corn</item>
+		<item>51durian</item>
+		<item>52mulberry</item>
+		<item>53leechee</item>
+		<item>54papaya</item>
+		<item>55plum</item>
+		<item>56guava</item>
+		<item>57avocado</item>
+		<item>58carambola</item>
+		<item>59grapefruit</item>
+		<item>60pine apple</item>
+		<item>61prune</item>
+		<item>62mangosteen</item>
+		<item>63nephelium lappaceum</item>
+		<item>64leek</item>
+		<item>65jiaobai</item>
+		<item>66waxgourd</item>
+		<item>67water spinach</item>
+		<item>84bean curd</item>
+		<item>85bingbaotie</item>
+		<item>73celery</item>
+		<item>79cherry tomatoes</item>
+		<item>72chrysanthemum coronarium</item>
+		<item>75coriander</item>
+		<item>86dried tofu</item>
+		<item>74garlic bolt</item>
+		<item>82honey</item>
+		<item>76kidneybean</item>
+		<item>69lettuce</item>
+		<item>89longan</item>
+		<item>87mushroom</item>
+		<item>88old godmother</item>
+		<item>77oyster mushroom</item>
+		<item>90plastic bag food</item>
+		<item>80pork</item>
+		<item>70romaine lettuce</item>
+		<item>71scallion</item>
+		<item>83stems</item>
+		<item>81tofu skin</item>
+		<item>68towel gourd</item>
+		<item>78turnip</item>
+	</string-array>
+
+	<string-array name="fruit_icon">
+		<item>@drawable/yoghurt</item>
+		<item>@drawable/yoghurt</item>
+		<item>@drawable/apple</item>
+		<item>@drawable/tangerine</item>
+		<item>@drawable/banana</item>
+		<item>@drawable/grape</item>
+		<item>@drawable/ham</item>
+		<item>@drawable/egg</item>
+		<item>@drawable/broccoli</item>
+		<item>@drawable/pakchoi</item>
+		<item>@drawable/tomato</item>
+		<item>@drawable/cucumber</item>
+		<item>@drawable/carrot</item>
+		<item>@drawable/eggplant</item>
+		<item>@drawable/sprite</item>
+		<item>@drawable/bread</item>
+		<item>@drawable/peach</item>
+		<item>@drawable/kiwifruit</item>
+		<item>@drawable/cantaloupe</item>
+		<item>@drawable/strawberry</item>
+		<item>@drawable/pear</item>
+		<item>@drawable/mango</item>
+		<item>@drawable/watermelon</item>
+		<item>@drawable/cherry</item>
+		<item>@drawable/pitaya</item>
+		<item>@drawable/greenpepper</item>
+		<item>@drawable/potato</item>
+		<item>@drawable/purple_cabbage</item>
+		<item>@drawable/cauliflower</item>
+		<item>@drawable/lotusroot</item>
+		<item>@drawable/pumpkin</item>
+		<item>@drawable/chinesecabbage</item>
+		<item>@drawable/bambooshoot</item>
+		<item>@drawable/beansprout</item>
+		<item>@drawable/spinach</item>
+		<item>@drawable/tofu</item>
+		<item>@drawable/needlemushroom</item>
+		<item>@drawable/cabbage</item>
+		<item>@drawable/squash</item>
+		<item>@drawable/balsam_pear</item>
+		<item>@drawable/corn</item>
+		<item>@drawable/durian</item>
+		<item>@drawable/mulberry</item>
+		<item>@drawable/leechee</item>
+		<item>@drawable/papaya</item>
+		<item>@drawable/plum_2</item>
+		<item>@drawable/guava</item>
+		<item>@drawable/avocado</item>
+		<item>@drawable/carambola</item>
+		<item>@drawable/grapefruit</item>
+		<item>@drawable/pineapple</item>
+		<item>@drawable/prune</item>
+		<item>@drawable/mangosteen</item>
+		<item>@drawable/nephelium_lappaceum</item>
+		<item>@drawable/leek</item>
+		<item>@drawable/jiaobai</item>
+		<item>@drawable/waxgourd</item>
+		<item>@drawable/water_spinach</item>
+		<item>@drawable/bean_curd</item>
+		<item>@drawable/bingbaotie</item>
+		<item>@drawable/celery</item>
+		<item>@drawable/cherry_tomatoes</item>
+		<item>@drawable/chrysanthemum_coronarium</item>
+		<item>@drawable/coriander</item>
+		<item>@drawable/dried_tofu</item>
+		<item>@drawable/garlic_bolt</item>
+		<item>@drawable/honey</item>
+		<item>@drawable/kidneybean</item>
+		<item>@drawable/lettuce</item>
+		<item>@drawable/longan</item>
+		<item>@drawable/mushroom</item>
+		<item>@drawable/old_godmother</item>
+		<item>@drawable/oyster_mushroom</item>
+		<item>@drawable/plasticbag</item>
+		<item>@drawable/pork</item>
+		<item>@drawable/romaine_lettuce</item>
+		<item>@drawable/scallion</item>
+		<item>@drawable/stems</item>
+		<item>@drawable/tofu_skin</item>
+		<item>@drawable/towel_gourd</item>
+		<item>@drawable/turnip</item>
+
+	</string-array>
+
+
+
+
+
+	<!--new-->
+	<!--这里是中文界显示的食物名称-->
+	<string-array name="fruitname_new">
+		<item>留空</item>
+		<item>酸奶</item>
+		<item>苹果</item>
+		<item>柑橘</item>
+		<item>香蕉</item>
+		<item>葡萄</item>
+		<item>火腿</item>
+		<item>鸡蛋</item>
+		<item>西兰花</item>
+		<item>油菜</item>
+		<item>西红柿</item>
+		<item>黄瓜</item>
+		<item>胡萝卜</item>
+		<item>茄子</item>
+		<item>饮料</item>
+		<item>面包</item>
+		<item>桃子</item>
+		<item>猕猴桃</item>
+		<item>哈蜜瓜</item>
+		<item>草莓</item>
+		<item>梨</item>
+		<item>芒果</item>
+		<item>西瓜</item>
+		<item>樱桃</item>
+		<item>火龙果</item>
+		<item>青椒</item>
+		<item>土豆</item>
+		<item>紫甘蓝</item>
+		<item>花菜</item>
+		<item>莲藕</item>
+		<item>南瓜</item>
+		<item>大白菜</item>
+		<item>竹笋</item>
+		<item>豆芽</item>
+		<item>菠菜</item>
+		<item>豆腐</item>
+		<item>金针菇</item>
+		<item>包菜</item>
+		<item>西葫芦</item>
+		<item>苦瓜</item>
+		<item>玉米</item>
+		<item>榴莲</item>
+		<item>桑葚</item>
+		<item>荔枝</item>
+		<item>木瓜</item>
+		<item>蓝莓</item>
+		<item>番石榴</item>
+		<item>牛油果</item>
+		<item>杨桃</item>
+		<item>柚子</item>
+		<item>菠萝蜜</item>
+		<item>西梅</item>
+		<item>山竹</item>
+		<item>红毛丹</item>
+		<item>韭菜</item>
+		<item>茭白</item>
+		<item>冬瓜</item>
+		<item>空心菜</item>
+		<item>豆泡</item>
+		<item>冰宝贴</item>
+		<item>芹菜</item>
+		<item>圣女果</item>
+		<item>茼蒿</item>
+		<item>香菜</item>
+		<item>豆干</item>
+		<item>蒜苗</item>
+		<item>蜂蜜</item>
+		<item>芸豆</item>
+		<item>生菜</item>
+		<item>桂圆</item>
+		<item>香菇</item>
+		<item>老干妈</item>
+		<item>蘑菇</item>
+		<item>塑料袋食品</item>
+		<item>猪肉</item>
+		<item>油麦菜</item>
+		<item>大葱</item>
+		<item>蒜苔</item>
+		<item>豆腐皮</item>
+		<item>丝瓜</item>
+		<item>白萝卜</item>
+	</string-array>
+	<!--这里是英文界面显示的食物名称，改成英文即可,规则:编号+名字-->
+	<string-array name="fruitname_new_en">
+		<item>yogurt</item>
+		<item>yogurt</item>
+		<item>apple</item>
+		<item>tangerine</item>
+		<item>banana</item>
+		<item>grape</item>
+		<item>ham</item>
+		<item>egg</item>
+		<item>broccoli</item>
+		<item>pakchoi</item>
+		<item>tomato</item>
+		<item>cucumber</item>
+		<item>carrot</item>
+		<item>eggplant</item>
+		<item>sprite</item>
+		<item>bread</item>
+		<item>peach</item>
+		<item>kiwifruit</item>
+		<item>cantaloupe</item>
+		<item>strawberry</item>
+		<item>pear</item>
+		<item>mango</item>
+		<item>watermelon</item>
+		<item>cherry</item>
+		<item>pitaya</item>
+		<item>green  pepper</item>
+		<item>potato</item>
+		<item>purple cabbage</item>
+		<item>cauliflower</item>
+		<item>lotus root</item>
+		<item>pumpkin</item>
+		<item>chinese cabbage</item>
+		<item>bamboo shoot</item>
+		<item>beansprout</item>
+		<item>spinach</item>
+		<item>tofu</item>
+		<item>needle mushroom</item>
+		<item>cabbage</item>
+		<item>squash</item>
+		<item>balsam pear</item>
+		<item>corn</item>
+		<item>durian</item>
+		<item>mulberry</item>
+		<item>leechee</item>
+		<item>papaya</item>
+		<item>plum</item>
+		<item>guava</item>
+		<item>avocado</item>
+		<item>carambola</item>
+		<item>grapefruit</item>
+		<item>pine apple</item>
+		<item>prune</item>
+		<item>mangosteen</item>
+		<item>nephelium lappaceum</item>
+		<item>leek</item>
+		<item>jiaobai</item>
+		<item>waxgourd</item>
+		<item>water spinach</item>
+		<item>bean curd</item>
+		<item>bingbaotie</item>
+		<item>celery</item>
+		<item>cherry tomatoes</item>
+		<item>chrysanthemum coronarium</item>
+		<item>coriander</item>
+		<item>dried tofu</item>
+		<item>garlic bolt</item>
+		<item>honey</item>
+		<item>kidneybean</item>
+		<item>lettuce</item>
+		<item>longan</item>
+		<item>mushroom</item>
+		<item>old godmother</item>
+		<item>oyster mushroom</item>
+		<item>plastic bag food</item>
+		<item>pork</item>
+		<item>romaine lettuce</item>
+		<item>scallion</item>
+		<item>stems</item>
+		<item>tofu skin</item>
+		<item>towel gourd</item>
+		<item>turnip</item>
+	</string-array>
+
+	<string-array name="fruit_new_icon">
+		<item>@drawable/yoghurt</item>
+		<item>@drawable/yoghurt</item>
+		<item>@drawable/apple</item>
+		<item>@drawable/tangerine</item>
+		<item>@drawable/banana</item>
+		<item>@drawable/grape</item>
+		<item>@drawable/ham</item>
+		<item>@drawable/egg</item>
+		<item>@drawable/broccoli</item>
+		<item>@drawable/pakchoi</item>
+		<item>@drawable/tomato</item>
+		<item>@drawable/cucumber</item>
+		<item>@drawable/carrot</item>
+		<item>@drawable/eggplant</item>
+		<item>@drawable/sprite</item>
+		<item>@drawable/bread</item>
+		<item>@drawable/peach</item>
+		<item>@drawable/kiwifruit</item>
+		<item>@drawable/cantaloupe</item>
+		<item>@drawable/strawberry</item>
+		<item>@drawable/pear</item>
+		<item>@drawable/mango</item>
+		<item>@drawable/watermelon</item>
+		<item>@drawable/cherry</item>
+		<item>@drawable/pitaya</item>
+		<item>@drawable/greenpepper</item>
+		<item>@drawable/potato</item>
+		<item>@drawable/purple_cabbage</item>
+		<item>@drawable/cauliflower</item>
+		<item>@drawable/lotusroot</item>
+		<item>@drawable/pumpkin</item>
+		<item>@drawable/chinesecabbage</item>
+		<item>@drawable/bambooshoot</item>
+		<item>@drawable/beansprout</item>
+		<item>@drawable/spinach</item>
+		<item>@drawable/tofu</item>
+		<item>@drawable/needlemushroom</item>
+		<item>@drawable/cabbage</item>
+		<item>@drawable/squash</item>
+		<item>@drawable/balsam_pear</item>
+		<item>@drawable/corn</item>
+		<item>@drawable/durian</item>
+		<item>@drawable/mulberry</item>
+		<item>@drawable/leechee</item>
+		<item>@drawable/papaya</item>
+		<item>@drawable/plum_2</item>
+		<item>@drawable/guava</item>
+		<item>@drawable/avocado</item>
+		<item>@drawable/carambola</item>
+		<item>@drawable/grapefruit</item>
+		<item>@drawable/pineapple</item>
+		<item>@drawable/prune</item>
+		<item>@drawable/mangosteen</item>
+		<item>@drawable/nephelium_lappaceum</item>
+		<item>@drawable/leek</item>
+		<item>@drawable/jiaobai</item>
+		<item>@drawable/waxgourd</item>
+		<item>@drawable/water_spinach</item>
+		<item>@drawable/bean_curd</item>
+		<item>@drawable/bingbaotie</item>
+		<item>@drawable/celery</item>
+		<item>@drawable/cherry_tomatoes</item>
+		<item>@drawable/chrysanthemum_coronarium</item>
+		<item>@drawable/coriander</item>
+		<item>@drawable/dried_tofu</item>
+		<item>@drawable/garlic_bolt</item>
+		<item>@drawable/honey</item>
+		<item>@drawable/kidneybean</item>
+		<item>@drawable/lettuce</item>
+		<item>@drawable/longan</item>
+		<item>@drawable/mushroom</item>
+		<item>@drawable/old_godmother</item>
+		<item>@drawable/oyster_mushroom</item>
+		<item>@drawable/plasticbag</item>
+		<item>@drawable/pork</item>
+		<item>@drawable/romaine_lettuce</item>
+		<item>@drawable/scallion</item>
+		<item>@drawable/stems</item>
+		<item>@drawable/tofu_skin</item>
+		<item>@drawable/towel_gourd</item>
+		<item>@drawable/turnip</item>
+
+	</string-array>
+
+</resources>

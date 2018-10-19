@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1080px"
+    android:layout_height="440px"
+    android:background="#e0000000"
+    >
+
+    <RelativeLayout
+        android:layout_width="1080px"
+        android:layout_height="440px">
+            <TextView
+                android:layout_width="389px"
+                android:layout_height="224px"
+                android:layout_marginTop="76px"
+                android:layout_marginLeft="96px"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="18px"
+                android:background="@drawable/jianbian1"
+                android:text="低湿模式：湿度40%左右                                                                            (存放非绿叶蔬菜类)"
+                />
+            <TextView
+                android:layout_width="389px"
+                android:layout_height="224px"
+                android:layout_marginTop="76px"
+                android:layout_marginLeft="620px"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="18px"
+                android:background="@drawable/jianbian2"
+                android:text="高湿模式：湿度60%左右                                                                   (存放绿叶蔬菜类)"
+                />
+
+    </RelativeLayout>
+</LinearLayout>

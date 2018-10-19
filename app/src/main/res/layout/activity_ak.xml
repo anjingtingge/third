@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout1"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="76px"
+                android:layout_height="76px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="3px"
+                android:src="@drawable/back" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="860"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px"
+            android:orientation="vertical"
+            android:background="@drawable/background2">
+            <TextView
+                android:layout_width="130px"
+                android:layout_height="40px"
+                android:layout_marginTop="15px"
+                android:layout_marginLeft="30px"
+                android:textColor="#FFFFFF"
+                android:text="食品慧拍"/>
+            <ImageView
+                android:id="@+id/cut0"
+                android:layout_width="750px"
+                android:layout_height="220px"
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="140px"
+                android:src="@drawable/video0"/>
+
+            <ImageView
+                android:id="@+id/cut1"
+                android:layout_width="750px"
+                android:layout_height="220px"
+                android:layout_marginTop="300px"
+                android:layout_marginLeft="140px"
+                android:src="@drawable/video1"/>
+
+            <ImageView
+                android:id="@+id/cut2"
+                android:layout_width="750px"
+                android:layout_height="220px"
+                android:layout_marginTop="540px"
+                android:layout_marginLeft="140px"
+                android:src="@drawable/video2"/>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="104">-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="220">-->
+            <!--<ImageView-->
+            <!--android:layout_width="750px"-->
+            <!--android:layout_height="220px" />-->
+            <!---->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="20">-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="220">-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="20">-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="220">-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="57">-->
+
+            <!--</LinearLayout>-->
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="22">
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="660"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/background2">
+            <TextView
+                android:layout_width="130px"
+                android:layout_height="40px"
+                android:layout_marginTop="15px"
+                android:layout_marginLeft="30px"
+                android:textColor="#FFFFFF"
+                android:text="推荐菜谱"/>
+            <ImageView
+                android:id="@+id/caipu1"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="90px"
+                android:layout_marginLeft="30px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="290px"
+                android:layout_marginLeft="30px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+            <ImageView
+                android:id="@+id/caipu2"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="90px"
+                android:layout_marginLeft="293px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="290px"
+                android:layout_marginLeft="293px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+            <ImageView
+                android:id="@+id/caipu3"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="90px"
+                android:layout_marginLeft="555px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="290px"
+                android:layout_marginLeft="555px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+            <ImageView
+                android:id="@+id/caipu4"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="90px"
+                android:layout_marginLeft="817px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="290px"
+                android:layout_marginLeft="817px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+            //第二排
+            <ImageView
+                android:id="@+id/caipu5"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="365px"
+                android:layout_marginLeft="30px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="565px"
+                android:layout_marginLeft="30px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+            <ImageView
+                android:id="@+id/caipu6"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="365px"
+                android:layout_marginLeft="293px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="565px"
+                android:layout_marginLeft="293px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+            <ImageView
+                android:id="@+id/caipu7"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="365px"
+                android:layout_marginLeft="555px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="565px"
+                android:layout_marginLeft="555px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+            <ImageView
+                android:id="@+id/caipu8"
+                android:layout_width="193px"
+                android:layout_height="200px"
+                android:layout_marginTop="365px"
+                android:layout_marginLeft="817px"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"/>
+            <TextView
+                android:layout_width="193px"
+                android:layout_height="40px"
+                android:layout_marginTop="565px"
+                android:layout_marginLeft="817px"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/backgroung3"
+                android:text="西红柿"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="170">
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

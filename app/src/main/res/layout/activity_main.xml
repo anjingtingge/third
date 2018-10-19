@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/RelativeLayout1"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="37px">-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/close_btn"-->
+
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="关闭页面" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/delete_btn"-->
+            <!--android:layout_marginRight="20dp"-->
+
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/close_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="清空所有照片" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/delete_current_btn"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/delete_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="删除本次照片" />-->
+
+    <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="968px"
+            android:layout_height="44px"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/bangzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="390px"
+                android:textColor="@color/white"
+                android:textSize="35px"
+                android:text="AI保鲜抽屉"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/bangzhu"-->
+                <!--android:layout_width="44px"-->
+                <!--android:layout_height="44px"-->
+                <!--android:layout_marginLeft="340px"-->
+                <!--android:gravity="right"-->
+               <!--/>-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="968px"
+            android:layout_height="1233px"
+
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_marginLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_marginTop="60px"
+                android:layout_height="1233px"
+                android:scaleType="fitXY"
+                android:src="@drawable/refrigerato"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_main_show"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="281px"-->
+                <!--android:layout_marginTop="326px"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="51px"-->
+                <!--android:text="40%"-->
+                <!--/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="262px"
+                android:layout_marginTop="626px"
+                android:textColor="@color/green"
+                android:textSize="36px"
+                android:text="湿度："/>
+
+            <com.camera.simplewebcam.NumberAnimTextView
+                android:id="@+id/shidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="362px"
+                android:layout_marginTop="615px"
+                android:layout_gravity="center"
+                android:textColor="@color/green"
+                android:textSize="51px"
+                android:text="70%"
+                />
+            <LinearLayout
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="400px"
+                android:layout_marginTop="200px"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/shibie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    android:textSize="29px"
+                    android:text="特定蔬菜类"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    android:textSize="29px"
+                    android:text="设置存储方式："/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55px">
+            <ImageView
+                android:id="@+id/gaoshimoshi"
+                android:layout_marginLeft="2px"
+                android:layout_marginTop="3px"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:scaleType="fitXY"
+                android:src="@drawable/highhumidity"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:layout_marginTop="8px"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/text"
+                    android:textSize="29px"
+                    android:layout_gravity="center"
+                    android:text="高湿模式"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="55px">
+                    <ImageView
+                        android:id="@+id/zhongshimoshi"
+                        android:layout_marginLeft="2px"
+                        android:layout_marginTop="3px"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mediumhumidity_p"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"
+                        android:layout_marginTop="8px"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/text"
+                        android:textSize="29px"
+                        android:layout_gravity="center"
+                        android:text="中湿模式"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="55px">
+                    <ImageView
+                        android:id="@+id/dishimoshi"
+                        android:layout_marginLeft="2px"
+                        android:layout_marginTop="3px"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lowhumidity"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50px"
+                        android:layout_marginTop="8px"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/text"
+                        android:textSize="29px"
+                        android:layout_gravity="center"
+                        android:text="低湿模式"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--<TextView-->
+                <!--android:layout_width="235px"-->
+                <!--android:layout_height="136px"-->
+                <!--android:layout_marginTop="761px"-->
+                <!--android:layout_marginLeft="240px"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/text"-->
+                <!--android:textSize="18px"-->
+                <!--android:background="@drawable/jianbian1"-->
+                <!--android:text="冰鲜模式：-3℃左右                 (存放当天使用肉类等)"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="235px"-->
+                <!--android:layout_height="136px"-->
+                <!--android:layout_marginTop="912px"-->
+                <!--android:layout_marginLeft="240px"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/text"-->
+                <!--android:textSize="18px"-->
+                <!--android:background="@drawable/jianbian2"-->
+                <!--android:text="Super 0℃：温度在0℃           (存放 乳制品，奶酪)"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="235px"-->
+                <!--android:layout_height="136px"-->
+                <!--android:layout_marginTop="1063px"-->
+                <!--android:layout_marginLeft="240px"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/text"-->
+                <!--android:textSize="18px"-->
+                <!--android:background="@drawable/jianbian3"-->
+                <!--android:text="臻鲜模式：3℃左右                (存放果蔬、熟食等)"-->
+                <!--/>-->
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="928px"
+            android:layout_height="427px"
+            android:layout_marginTop="47px"
+            android:layout_gravity="center"
+            android:background="@drawable/yuanjiao">
+        <ImageView
+            android:id="@+id/id_image_one"
+            android:layout_width="900px"
+            android:layout_height="407px"
+           android:layout_marginLeft="14px"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/c2"
+         />
+        </LinearLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="968px"-->
+            <!--android:layout_height="270px"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="36px"-->
+            <!--android:background="@drawable/yuanjiao"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_main_show"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="20dp"-->
+                <!--android:text="5℃"-->
+                <!--/>-->
+
+                <!--<com.camera.simplewebcam.NumberAnimTextView-->
+                    <!--android:id="@+id/shidu"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textColor="@color/red"-->
+                    <!--android:textSize="40dp"-->
+                    <!--android:text="8℃"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="507px"-->
+                <!--android:orientation="vertical"-->
+            <!--&gt;-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/tab_text_selected"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:text="识别结果为西红柿"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/tab_text_selected"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:text="设置存储方式："/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/tab_text_selected"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:text="臻鲜模式"/>-->
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="968px"-->
+            <!--android:layout_height="980px"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="460px"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="460px"-->
+                    <!--android:layout_height="270px"-->
+                    <!--android:layout_marginTop="27px"-->
+                    <!--android:background="@drawable/jianbian1">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="69px"-->
+                        <!--android:layout_height="69px"-->
+                        <!--android:src="@drawable/bingxian_on"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="232px"-->
+                        <!--android:layout_height="69px"-->
+                         <!--android:layout_marginLeft="80px"-->
+                        <!--android:textColor="@color/tab_text_normal"-->
+                        <!--android:textSize="30px"-->
+                        <!--android:text="冰鲜模式"-->
+                        <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="460px"-->
+                    <!--android:layout_height="270px"-->
+                    <!--android:layout_marginTop="80px"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textColor="@color/tab_text_normal"-->
+                    <!--android:textSize="40px"-->
+                    <!--android:text="冰鲜模式：-3℃左右 (存放当天使用肉类等)"-->
+                    <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--<TextView-->
+                    <!--android:layout_width="460px"-->
+                    <!--android:layout_height="270px"-->
+                    <!--android:layout_marginTop="27px"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textColor="@color/text"-->
+                    <!--android:textSize="60px"-->
+                    <!--android:background="@drawable/jianbian2"-->
+                    <!--android:text="Super 0℃：温度在0℃(存放 乳制品，奶酪)"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView"-->
+                    <!--android:layout_width="460px"-->
+                    <!--android:layout_height="270px"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="27px"-->
+                    <!--android:background="@drawable/jianbian3"-->
+                    <!--android:text="臻鲜模式：3℃左右  (存放果蔬、熟食等)"-->
+                    <!--android:textColor="@color/tab_text_selected"-->
+                    <!--android:textSize="60px" />-->
+            <!--</LinearLayout>-->
+
+
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+</RelativeLayout>
